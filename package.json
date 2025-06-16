@@ -1,0 +1,20 @@
+{
+  "name": "teenage_art_scene_webste",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "postcss:watch": "postcss src/styles.css --dir public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "cssnano": "^7.0.7",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^10.2.3"
+  }
+}
