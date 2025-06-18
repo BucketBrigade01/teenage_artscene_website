@@ -4,6 +4,7 @@
 }
 
 .socials-main {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,4 +34,16 @@
 
 .socials-socials i:hover {
     scale: 1.4;
+}
+
+.socials-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    & a {
+        text-decoration: none;
+        font-weight: 700;
+        color: white;
+    }
 }

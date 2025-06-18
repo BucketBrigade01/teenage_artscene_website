@@ -13,9 +13,10 @@
         color: white;
     }
 
-    @media screen and (width < 950px) {
+    @media screen and (width < 1024px) {
         justify-content: center;
         padding-bottom: 1rem;
+        background-attachment: local;
     }
 
     position: relative;
