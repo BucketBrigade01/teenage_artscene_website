@@ -75,7 +75,7 @@
     gap: 2rem;
 
     & i {
-        font-size: var(--font-500);
+        font-size: var(--font-300);
     }
     
 }
