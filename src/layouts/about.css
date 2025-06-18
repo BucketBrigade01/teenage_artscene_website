@@ -64,13 +64,6 @@
         gap: 3rem;
     }
 
-    & .about-image {
-        filter: drop-shadow(10px 10px 20px purple)
-            drop-shadow(-10px -10px 20px purple)
-            drop-shadow( 10px -10px 20px purple)
-            drop-shadow(-10px 10px 20px purple);
-    }
-
     & img {
         width: 30rem;
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
