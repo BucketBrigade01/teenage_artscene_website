@@ -2,11 +2,67 @@
 title: Teenage Art Scene | Official Website
 layout: 'base.njk'
 ---
-<section class="test-container">
+{% set hero = collections.hero | first %}
+<section id="hero" class="hero-section" style="background-image: url('{{ hero.data.backgroundImage }}');"> 
     <div class="wrapper">
-        <h1>
-        Teenage Art Scene Website
-        </h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo hic a veniam magni nostrum quia amet in recusandae eos quod voluptate, iure suscipit ratione numquam cumque fugiat at quidem!</p>
+        <div class="hero-main">
+            <div class="hero-feature">
+                <h2>Cassette</h2>
+                <h4>Check out the latest release</h4>
+                <div>
+                    <button class="default-button">Stream Here</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="shows" class="show-section">
+    <div class="circle"></div>
+    <div class="wrapper">
+        <div class="shows-main">
+            <h2>UPCOMING SHOWS</h2>
+            {% for show in collections.show %}
+                <div class="show-item"> 
+                    <div class="show-details">
+                        <h4>{{ show.data.title }}</h4>
+                        <p>{{ show.date | showDate }}</p>
+                    </div>
+                    <div class="show-address">
+                        <p>{{ show.data.address }}</p>
+                    </div>
+                    {% if show.data.link %}
+                        <button class="default-button">
+                            Buy Tickets
+                        </button>
+                    {% else %}
+                        <button class="none-button">
+                            Not Available
+                        </button>
+                    {% endif %}
+                </div>
+                <hr class="show-sep">
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% set about = collections.about | first %}
+<section id="about" class="about-section" style="background-image: url('{{ about.data.backgroundImage }}');">
+    <div class="wrapper">
+        <div class="about-main">
+            <div class="about-image">
+                <img src="{{ about.data.showcaseImage }}" alt="">
+            </div>
+            <div class="about-info">
+                <h2>{{ about.data.title }}</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum voluptatum corporis nostrum reiciendis rem ullam laboriosam veritatis, asperiores culpa aspernatur aliquid corrupti ipsam placeat, eaque alias quod ad architecto. Veniam.
+                </p>
+                <button class="default-button">
+                    Learn More
+                </button>
+            </div>
+        </div>
     </div>
 </section>

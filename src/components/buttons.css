@@ -1,0 +1,38 @@
+.default-button {
+    border: none;
+    outline: none;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    width: 15rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    font-family: var(--font-brand);
+    font-size: var(--font-100);
+    cursor: pointer;
+    box-shadow: 4px 4px 2px var(--color-black);
+    scale: 1;
+    transform-origin: left center;
+    transition: box-shadow ease-in-out 65ms,
+                scale ease-in-out 65ms;
+}
+
+.default-button:hover {
+    box-shadow: 8px 8px 2px var(--color-black);
+    scale: 1.1;
+}
+
+.none-button {
+    outline: none;
+    background-color: transparent;
+    border: 2px dashed white;
+    color: var(--color-white); 
+    width: 15rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    font-family: var(--font-brand);
+    font-size: var(--font-100);
+    scale: 1;
+    transform-origin: left center;
+    transition: box-shadow ease-in-out 65ms,
+                scale ease-in-out 65ms;
+}

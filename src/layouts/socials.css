@@ -1,0 +1,36 @@
+.socials {
+    padding-block: 5rem;
+    filter: sepia(100%) hue-rotate(300deg) saturate(200%);
+}
+
+.socials-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    & p {
+        color: var(--color-alt);
+        font-size: var(--font-25);
+    }
+}
+
+.socials-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.socials-socials i {
+    color: var(--color-white);
+    font-size: var(--font-200);
+    scale: 1;
+    transition: scale ease-in-out 50ms;
+}
+
+.socials-socials i:hover {
+    scale: 1.4;
+}

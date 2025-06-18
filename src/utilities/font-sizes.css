@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'futur';
+  src: url('/assets/fonts/futur.ttf') format('woff2'),
+       url('/assets/fonts/futur.ttf') format('woff'),
+       url('/assets/fonts/futur.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'futura-extra-black';
+  src: url('/assets/fonts/Futura Extra Black font.ttf') format('woff2'),
+       url('/assets/fonts/Futura Extra Black font.ttf') format('woff'),
+       url('/assets/fonts/Futura Extra Black font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'futura-light';
+  src: url('/assets/fonts/futura light bt.ttf') format('woff2'),
+       url('/assets/fonts/futura light bt.ttf') format('woff'),
+       url('/assets/fonts/futura light bt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'futurabb';
+  src: url('/assets/fonts/unicode.futurabb.ttf') format('woff2'),
+       url('/assets/fonts/unicode.futurabb.ttf') format('woff'),
+       url('/assets/fonts/unicode.futurabb.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-25: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+  --font-50: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  --font-100: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --font-200: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+  --font-300: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+  --font-400: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
+  --font-500: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+  --font-600: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
+
+  --font-primary: 'futur', system-ui, sans-serif; 
+  --font-brand: 'futura-extra-black', system-ui, sans-serif;
+  --font-brand-alt: 'futurabb', system-ui, sans-serif;
+
+  --color-white: white;
+  --color-black: black;
+  --color-alt: purple;
+}

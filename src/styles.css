@@ -1,1 +1,13 @@
-@import 'layouts/test.css'
+@import "base/reset.css";
+@import "base/base.css";
+
+@import "utilities/container.css";
+@import "utilities/font-sizes.css";
+
+@import "components/buttons.css";
+
+@import "layouts/hero.css";
+@import "layouts/navbar.css";
+@import "layouts/shows.css";
+@import "layouts/about.css";
+@import "layouts/socials.css";
