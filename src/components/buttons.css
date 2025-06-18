@@ -36,3 +36,10 @@
     transition: box-shadow ease-in-out 65ms,
                 scale ease-in-out 65ms;
 }
+
+.burger-button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

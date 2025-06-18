@@ -10,10 +10,10 @@
 <body>
     <header class="navbar">
     <div class="nav-links">
-        <a href="">MUSIC</a>
-        <a href="">SHOWS</a>
-        <a href="">ABOUT</a>
-        <a href="">CONTACT</a>
+        <a href="#hero">MUSIC</a>
+        <a href="#shows">SHOWS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
     </div>
     <div class="nav-title">
         <h4>
@@ -22,16 +22,36 @@
     </div>
     <div class="nav-socials">
         <a href="https://open.spotify.com/artist/67y3Exu2lTpy9Vp4evxHEB?si=DwfJvpdgTnaz933TaHAd4w" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-        <a href="https://www.instagram.com/silverware_band/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@silverware_band?lang=en" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100092845976787#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://music.apple.com/us/artist/silverware/1688771856" target="_blank"><i class="fa-brands fa-apple"></i></a>
-        <a href="https://www.youtube.com/@SILVERWARE_band" target="_blank"><i class="fa-brands fa-youtube" ></i></a>
+        <a href="https://www.instagram.com/teenageartscene/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@teenageartscene?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/TeenageArtScene/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://music.apple.com/ca/artist/teenage-art-scene/1603443071" target="_blank"><i class="fa-brands fa-apple"></i></a>
+        <a href="https://www.youtube.com/channel/UCcKqeLi7diQiJYDXIS-U2kA?sub_confirmation=1" target="_blank"><i class="fa-brands fa-youtube" ></i></a>
     </div>
     <div class="nav-hamburger">
-       <i class="fas fa-bars"></i>
+       <button class="burger-button"><i class="fas fa-bars"></i></button>
     </div>  
+    <dialog class="burger-popup">
+        <div class="burger-items">
+            <div class="burger-links">
+            <a href="#hero"><button class="close-button-link">MUSIC</button></a>
+            <a href="#shows"><button class="close-button-link">SHOWS</button></a>
+            <a href="#about"><button class="close-button-link">ABOUT</button></a>
+            <a href="#contact"><button class="close-button-link">CONTACT</button></a>
+        </div>
+        <div class="burger-socials">
+             <a href="https://open.spotify.com/artist/67y3Exu2lTpy9Vp4evxHEB?si=DwfJvpdgTnaz933TaHAd4w" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://www.instagram.com/teenageartscene/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@teenageartscene?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/TeenageArtScene/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://music.apple.com/ca/artist/teenage-art-scene/1603443071" target="_blank"><i class="fa-brands fa-apple"></i></a>
+            <a href="https://www.youtube.com/channel/UCcKqeLi7diQiJYDXIS-U2kA?sub_confirmation=1" target="_blank"><i class="fa-brands fa-youtube" ></i></a>
+        </div>  
+        <button class="close-button"><i class="fa-solid fa-x"></i></button>
+        </div>
+    </dialog>
 </header>
+<script src="/scripts/burger.js"></script>
     <main>
         
 <section id="hero" class="hero-section" style="background-image: url('/assets/images/tas_hero.webp');"> 
@@ -41,7 +61,7 @@
                 <h2>Cassette</h2>
                 <h4>Check out the latest release</h4>
                 <div>
-                    <button class="default-button">Stream Here</button>
+                    <a href="https://open.spotify.com/album/4se9GeEaPHwF5xSmP0roef?si=jXSX4DTZSCiYrEeX9T8RJg" target="_blank"><button class="default-button">Stream Here</button></a>
                 </div>
             </div>
         </div>
@@ -125,27 +145,45 @@
         </div>
     </div>
 </section>
+
+ <section id="contact" class="contact-main">
+    <div class="wrapper">
+        <div class="contact-items">
+            <h2>GET IN TOUCH</h2>
+            <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="79e03819-e80d-4adc-a80a-c6b2c9830a39">
+                <input class="contact-form-item" type="text" name="name" placeholder="Name" required>
+                <input class="contact-form-item" type="email" name="email" placeholder="Email" required>
+                <input class="contact-form-item" type="text" name="phone" placeholder="Phone Number" required>
+                <textarea class="contact-form-item" name="message" rows="4" placeholder="Whats up?"></textarea> 
+                <button class="default-button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
     <footer class="socials">
     <div class="wrapper">
         <div class="socials-main">
             <div class="socials-links">
-                <a href="">MUSIC</a>
-                <a href="">SHOWS</a>
-                <a href="">ABOUT</a>
-                <a href="">CONTACT</a>
+                <a href="#hero">MUSIC</a>
+                <a href="#shows">SHOWS</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
             </div>
             <div class="socials-socials">
-                <a href="https://open.spotify.com/artist/67y3Exu2lTpy9Vp4evxHEB?si=DwfJvpdgTnaz933TaHAd4w" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-                <a href="https://www.instagram.com/silverware_band/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@silverware_band?lang=en" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100092845976787#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://music.apple.com/us/artist/silverware/1688771856" target="_blank"><i class="fa-brands fa-apple"></i></a>
-                <a href="https://www.youtube.com/@SILVERWARE_band" target="_blank"><i class="fa-brands fa-youtube" ></i></a>
+                <a href="https://open.spotify.com/artist/3u3E19vzL0ev6J0D9lSAao" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.instagram.com/teenageartscene/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@teenageartscene?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/TeenageArtScene/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://music.apple.com/ca/artist/teenage-art-scene/1603443071" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                <a href="https://www.youtube.com/channel/UCcKqeLi7diQiJYDXIS-U2kA?sub_confirmation=1" target="_blank"><i class="fa-brands fa-youtube" ></i></a>
             </div>
             <p>&copy; 2025 Jake Styles. All rights reserved.</p>
         </div>
     </div>
 </footer>
+
+    <script src="/scripts/burger.js"></script>
 </body>
 </html>

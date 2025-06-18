@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./static/styles.css");
     eleventyConfig.addPassthroughCopy("./src/pass_overs");
     eleventyConfig.addPassthroughCopy("./src/assets");
+    eleventyConfig.addPassthroughCopy("./src/scripts");
 
     eleventyConfig.addFilter('showDate', (dateObj) =>{
         return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toLocaleString(DateTime.DATE_HUGE);

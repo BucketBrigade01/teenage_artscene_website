@@ -16,7 +16,7 @@
     @media screen and (width < 1024px) {
         justify-content: center;
         padding-bottom: 1rem;
-        background-attachment: local;
+        background-attachment: scroll;
     }
 
     position: relative;
