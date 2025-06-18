@@ -3,7 +3,7 @@
     background-position: center 60%;
     background-size: cover;
     background-attachment: fixed;
-    filter: sepia(100%) hue-rotate(300deg) saturate(200%);
+    filter: sepia(100%) hue-rotate(190deg) saturate(300%);
 
     position: relative;
     

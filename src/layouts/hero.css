@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    filter: sepia(100%) hue-rotate(300deg) saturate(200%);
+    filter: sepia(100%) hue-rotate(190deg) saturate(300%);
 
     & h1 {
         color: white;

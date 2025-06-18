@@ -1,7 +1,7 @@
 .contact-main {
     padding-block: 5rem;
     background: linear-gradient(to bottom, var(--color-black), var(--color-alt));
-    filter: sepia(100%) hue-rotate(300deg) saturate(200%);
+    filter: sepia(100%) hue-rotate(190deg) saturate(300%);
 }
 
 .contact-items {

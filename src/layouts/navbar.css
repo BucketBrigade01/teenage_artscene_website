@@ -10,6 +10,7 @@
     @media screen and (width < 1000px) {
         padding-inline: 1rem;
     }
+    filter: sepia(100%) hue-rotate(190deg) saturate(300%);
 }
 
 .nav-title h4 {

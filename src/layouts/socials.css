@@ -1,7 +1,7 @@
 .socials {
     position: relative;
     padding-block: 5rem;
-    filter: sepia(100%) hue-rotate(300deg) saturate(200%);
+    filter: sepia(100%) hue-rotate(190deg) saturate(300%);
 }
 
 .socials::before {
