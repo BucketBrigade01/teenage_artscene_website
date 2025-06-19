@@ -64,5 +64,14 @@
 }
 
 .show-details {
-    width: 80ch;
+    flex: 1; /* Takes available space */
+}
+
+.show-address {
+    flex: 1; /* Takes available space */
+    text-align: start; /* Optional: centers the address */
+}
+
+.show-button {
+    flex-shrink: 0; /* Prevents button from shrinking */
 }

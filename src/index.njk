@@ -32,13 +32,17 @@ layout: 'base.njk'
                         <p>{{ show.data.address }}</p>
                     </div>
                     {% if show.data.link %}
-                        <button class="default-button">
-                            Buy Tickets
-                        </button>
+                        <div class="show-button">
+                            <button class="default-button">
+                                Buy Tickets
+                            </button>
+                        </div>
                     {% else %}
-                        <button class="none-button">
-                            Not Available
-                        </button>
+                        <div class="show-button">
+                            <button class="none-button">
+                                Not Available
+                            </button>
+                        </div>
                     {% endif %}
                 </div>
                 <hr class="show-sep">
