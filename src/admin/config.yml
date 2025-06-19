@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main 
+
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "about_variables"
+    label: "About Page"
+    folder: "src/pass_overs/about_variables"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Background Image", name: "backgroundImage", widget: "image"}
+      - {label: "Showcase Image", name: "showcaseImage", widget: "image"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default:
+          - "about"
