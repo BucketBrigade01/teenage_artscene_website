@@ -7,12 +7,13 @@ public_folder: "/assets/images"
 
 collections:
   - name: "about_variables"
-    label: "About Page"
+    label: "About"
     folder: "src/pass_overs/about_variables"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown"}
       - {label: "Background Image", name: "backgroundImage", widget: "image"}
       - {label: "Showcase Image", name: "showcaseImage", widget: "image"}
       - label: "Tags"
@@ -20,3 +21,37 @@ collections:
         widget: "list"
         default:
           - "about"
+
+  - name: "show_variables"
+    label: "Show Details"
+    folder: "src/pass_overs/show_variables"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Address", name: "address", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Ticket Link", name: "ticketLink", widget: "string", required: false}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default:
+          - "show"
+
+  - name: "hero_variables"
+    label: "Hero"
+    folder: "src/pass_overs/hero_variables"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Background Image", name: "backgroundImage", widget: "image"}
+      - {label: "Showcase Name", name: "showcaseName", widget: "string"}
+      - {label: "Showcase Description", name: "showcaseDescription", widget: "string"}
+      - {label: "Showcase Link", name: "showcaseLink", widget: "string"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default:
+          - "hero"
+    

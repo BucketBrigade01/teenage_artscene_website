@@ -7,10 +7,10 @@ layout: 'base.njk'
     <div class="wrapper">
         <div class="hero-main">
             <div class="hero-feature">
-                <h2>Cassette</h2>
-                <h4>Check out the latest release</h4>
+                <h2>{{ hero.data.showcaseName }}</h2>
+                <h4>{{ hero.data.showcaseDescription }}</h4>
                 <div>
-                    <a href="https://open.spotify.com/album/4se9GeEaPHwF5xSmP0roef?si=jXSX4DTZSCiYrEeX9T8RJg" target="_blank"><button class="default-button">Stream Here</button></a>
+                    <a href="'{{ hero.data.showcaseLink }}'" target="_blank"><button class="default-button">Stream Here</button></a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ layout: 'base.njk'
             <div class="about-info">
                 <h2>{{ about.data.title }}</h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum voluptatum corporis nostrum reiciendis rem ullam laboriosam veritatis, asperiores culpa aspernatur aliquid corrupti ipsam placeat, eaque alias quod ad architecto. Veniam.
+                    {{ about.content | safe }}
                 </p>
                 <button class="default-button">
                     Learn More
