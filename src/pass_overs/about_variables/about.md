@@ -1,7 +1,7 @@
 ---
 title: About Teenage Art Scene
 backgroundImage: /assets/images/blank-white-7sn5o1woonmklx1h.jpg
-showcaseImage: /assets/images/pc270038.jpg
+showcaseImage: /assets/images/pc270038.webp
 tags:
   - about
 ---
