@@ -1,0 +1,16 @@
+---
+title: Teenage Art Scene | Official Website
+layout: 'base.njk'
+---
+
+<section id="gallery" class="gallery-section">
+    <div class="wrapper">
+        <div class="gallery-main">
+            <div class="gallery-items">
+                {% for item in collections.gallery %}
+                    <img width="300rem" src="{{ item.data.showcaseImage }}" alt="">
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

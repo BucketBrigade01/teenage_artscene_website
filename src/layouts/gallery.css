@@ -1,0 +1,21 @@
+.gallery-section {
+    filter: sepia(100%) hue-rotate(190deg) saturate(300%);
+    background: linear-gradient(to bottom, var(--color-black), var(--color-alt));
+}
+
+.gallery-main {
+    display: block;
+}
+
+.gallery-items {
+    padding-inline: 4rem;
+    padding-block: 5rem;
+    margin-inline: auto;
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.gallery-items img {
+    width: 100%;
+    break-inside: avoid;
+}
