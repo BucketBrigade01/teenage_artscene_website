@@ -1,22 +1,6 @@
 .socials {
     position: relative;
     padding-block: 5rem;
-    filter: sepia(100%) hue-rotate(190deg) saturate(300%);
-}
-
-.socials::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    top: 0;
-    background-color: purple;
-
-    /* Mask-related */
-    mask-image: url("/assets/images/triangle.svg"); 
-    mask-repeat: repeat-x;                          
-    mask-position: top;                              
-    mask-size: 60px 20px;                           
 }
 
 .socials-main {
@@ -28,7 +12,7 @@
     gap: 2rem;
 
     & p {
-        color: var(--color-alt);
+        color: var(--color-white);
         font-size: var(--font-25);
     }
 }

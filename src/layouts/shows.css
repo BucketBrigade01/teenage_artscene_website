@@ -3,20 +3,6 @@
     overflow: hidden;
     background-color: var(--color-black);
     padding-block: 5rem;
-    filter: sepia(100%) hue-rotate(190deg) saturate(300%);
-
-    & .circle {
-        position: absolute;
-        width: 30rem;
-        height: 30rem;
-        border-radius: 50%;
-        right: 0;
-        top: 50%;
-        transform: translate(50%, -50%);
-        background-color: purple;
-        z-index: 0; 
-        filter: blur(50px);;
-    }
 }
 
 .shows-main {
@@ -24,12 +10,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
-    & h2 {
-        text-shadow: 3px 3px 1px orangered, 
-        6px 6px 1px red,
-        9px 9px 1px purple;
-    }
 
     @media screen and (width < 1000px) {
         text-align: center;

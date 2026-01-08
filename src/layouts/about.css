@@ -3,7 +3,6 @@
     background-position: center 60%;
     background-size: cover;
     background-attachment: fixed;
-    filter: sepia(100%) hue-rotate(190deg) saturate(300%);
 
     position: relative;
     
@@ -51,9 +50,6 @@
     }
 
     & h2 {
-        text-shadow: 3px 3px 1px orangered, 
-        6px 6px 1px red,
-        9px 9px 1px purple;
         z-index: 2;
     }
 
@@ -66,7 +62,6 @@
 
     & img {
         width: 30rem;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
         object-fit: cover;
     }
 }
