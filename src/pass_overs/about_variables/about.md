@@ -1,6 +1,6 @@
 ---
 title: About Teenage Art Scene
-backgroundImage: /assets/images/abstract-geometric-background-shapes-texture_1194-301824.jpg.avif
+backgroundImage: /assets/images/abstract-geometric-background-shapes-texture_1194-301824.jpg.webp
 showcaseImage: /assets/images/pc270038.webp
 tags:
   - about
